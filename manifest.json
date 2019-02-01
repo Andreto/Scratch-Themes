@@ -1,0 +1,13 @@
+{
+  "name": "Scratch Theme",
+  "version": "1.0",
+  "description": "Theming tool for Scratch",
+  "manifest_version": 2,
+  "permissions": ["tabs", "*://*.google.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.scratch.mit.edu/*"],
+      "js": ["extentionMain.js"]
+    }
+  ]
+}
