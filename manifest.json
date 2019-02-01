@@ -7,7 +7,7 @@
   "content_scripts": [
     {
       "matches": ["*://*.scratch.mit.edu/*"],
-      "js": ["extentionMain.js"]
+      "js": ["extensionMain.js"]
     }
   ]
 }
