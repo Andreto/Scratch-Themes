@@ -1,8 +1,3 @@
-var script = document.createElement('script');
-
-script.src = 'https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js';
-document.getElementsByTagName('head')[0].appendChild(script);
-
 var changeData = [
   [".gui_menu-bar-position_3U1T0", "background-color", "#21252b"],
   [".gui_body-wrapper_-N0sA", "background-color", "#282c34"],
@@ -22,8 +17,9 @@ var changeData = [
   ["input", "background-color", "#3a3f4b"]
 ]
 
-$("body");
-
 for (i=0; i < changeData.length; i++){
-  $(changeData[i][0]).css(changeData[i][1], changeData[i][2]);
+  var elements = document.querySelectorAll(changeData[i][0]);
+  for (var ii = 0; i < myElements.length; ii++) {
+  	elements[ii].style = (changeData[i][1] + ": " + changeData[i][2] + ";");
+  }
 }

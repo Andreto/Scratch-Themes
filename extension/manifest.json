@@ -3,12 +3,11 @@
   "version": "1.0",
   "description": "Theming tool for Scratch",
   "manifest_version": 2,
-  "permissions": ["tabs", "*://*.google.com/*"],
+  "permissions": ["tabs"],
   "content_scripts": [
     {
       "matches": ["*://*.scratch.mit.edu/*"],
       "js": ["extensionMain.js"]
     }
   ],
-  "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'"
 }
